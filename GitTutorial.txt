@@ -1,0 +1,40 @@
+1. git init - to make a folder as repository
+
+2. git status - to see the status of uncomitted and to be uploaded changes
+
+3.git add 1.txt
+
+--This needs to be added before commiting any file to repository
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+4. git commit -m "comment"
+
+5. git log --> metadata about commit
+
+to link to github repository(just 1 time activity)
+git remote add origin https://github.com/nishantpandey107/GitLearning.git
+
+to push commited changes to repository
+git push -u origin master
+
+
+
+now we will download the changes from hub to local
+either by fetch followed by merge (if any conflict then)
+git fetch origin master ------> only update the local staged repos, and not actual files
+git merge origin/master -------> this will update the files
+
+or by pull(just to get the latest code)
+git pull origin master
+
+
+to break the connection from local to server
+git remote remove origin
+
+connect the local to another repositories
+git remote add origin https://github.com/nishantpandey107/GitLearning.git
+
+
+to synch unrelated chnages
+git pull origin master --allow -unrelated-histories
