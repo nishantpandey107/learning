@@ -20,6 +20,8 @@ git push -u origin master
 
 
 
+
+
 now we will download the changes from hub to local
 either by fetch followed by merge (if any conflict then)
 git fetch origin master ------> only update the local staged repos, and not actual files
@@ -38,3 +40,11 @@ git remote add origin https://github.com/nishantpandey107/GitLearning.git
 
 to synch unrelated chnages
 git pull origin master --allow -unrelated-histories
+
+
+
+
+
+
+to clone new repository
+git clone https://github.com/nishantpandey107/learning.git
